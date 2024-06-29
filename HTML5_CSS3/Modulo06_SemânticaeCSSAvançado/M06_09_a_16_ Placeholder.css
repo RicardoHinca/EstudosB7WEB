@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+}
+
+form {
+    background-color: #CCC;
+    border: 2px solid black;
+    text-align: center;
+    height: 10rem;
+    width: 14rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#degrade {
+    height: 20rem;
+    width: 30rem;
+    background-color: aqua;
+    background-image: linear-gradient(aqua, red, blue);
+}

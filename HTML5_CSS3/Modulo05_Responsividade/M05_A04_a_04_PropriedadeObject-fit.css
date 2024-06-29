@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    object-fit: cover;
+        /*OBJECT-FIT usado para redimensionar imagens onde podemos utilizar com varios parametros diferentes citados abaixo*/
+        /*FILL ele vai distorcer a imagem, porem vai mostrar ela inteira na tela*/
+        /*CONTAIN ela vai diminuir a imagem, deixando espaco em branco, porem mostrando a imagem completa sem distorcao*/
+        /*COVER um dos mais utilizados, ele vai manter a proporcao da imagem porem corta a partir do centro mantendo a proporcao*/
+        /*NONE vai cortar a imagem, porem vai manter o tamanho original, onde o COVER redimensiona antes*/
+        /*SCALE-DOWN ela é igual ao contain porem diminui a qualidade da imagem por isso pouca usada*/
+}

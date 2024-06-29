@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+/*VAR sao variaves, criadas para facilitar na hora de corrigir ou trocar uma cor letra tamanho de varios campos do seu site
+mudando apenas um campo, por exemplo voce tem varios paragrafos coloridos e tem que mudar a cor, indo de tag por tag 
+para trocar de black para white, voce usando a variavel ira trocar somente nela, que  todos os itens que tem essa var tbm 
+serao alteradas*/
+
+:root {
+/*:root e para ele ficar valido para todo o documento, dentro do ROOT vamos criar as variaveis sempre iniciando em
+-- mas o nome que voce quer - outra informacao (usar nomes basico e diretos sem fru fru) */
+    --bg--color: #000;
+    --bg--second: #444;
+    --font-color: #fff;
+    --font-size-big: 55px;
+    --font-size-small: 30px;
+}
+
+body{
+    background-color: var(--bg--color);
+/* quando necessario colocar uma cor letra etc dentro dos tags, utiliza-se VAR() abre e fecha parenteses e coloca 
+o nome da variavel selecinonado la no root*/
+    font-size: var(--font-size-big);
+}
+h3 {
+    color: var(--font-color);
+}
+.container {
+    background-color: var(--bg--second);
+    color:var(--font-color, #0000ff);
+    /* quando voce tem a variavel e por algum motivo ela nao for encontrada, voce pode colocar virgula e a segunda opcao de cor que deseja */
+}
+
+@media (max-width: 750px) {
+    body {
+        font-size: var(--font-size-small);
+    };
+}
+
+/* sobre o media pode ser criado outra variavel dentro do root principal como mostrado acima ou tambem temos a opcao de so trocar o root no media */
+
+
+/* @media (max-width: 750px) {
+    :root{
+        --font-size: 30px;
+    }
+} */
+
+/* dessa forma tambem funcionaria, de ambas as formas pode ser usada */

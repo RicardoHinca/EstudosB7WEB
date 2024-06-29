@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+p {
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+        /*Colocar o texto em Negrito via CSS*/
+    font-family: "Chilanka"; 
+        /*Troca o tipo de fonte do texto | por padrao entram 3 fontes como bkp se o computador que esta lendo nao tiver a fonte 
+        principal ele vai para a segunda opcao e sucessivamente*/
+    text-align: left;
+        /*para alinhar os textos conforme solicitado
+        left alinhado a esquerda 
+        center centralizado 
+        rigth alinhado a direita
+        justify texto justificado*/
+    /*text-transform: lowercase;
+        /*uppercase - Transformo todo o meu conteudo da tag em CAIXA ALTA*/
+        /*lowercase - Transformo todo o meu conteudo da tag em letra minuscula*/
+    letter-spacing: 2px;
+        /*coloca um espacamento entre cada letra*/
+    word-spacing: 3px;
+        /*coloca um espacamento entre cada palavra*/
+    line-height: 20px;
+        /*espacamento entre uma linha e outra*/
+    text-shadow: 0px 0px 0px red;
+        /*shadow significa sombra, como o nome fala e para sombrear um texto
+        primeiro campo sombra para a direita
+        segundo campo sombra para baixo
+        terceiro campo sombra para espaço de esfumaçamento 
+        quarto campo cor da sombra */
+}
+
+a {
+    text-decoration: none;
+        /*Explica que nao tem nenhum tipo de decoracao no texto, isso serve para quando voce tem um link de redirecionamento que fica
+        com o underlin em baixo do link fazer ele sumir entre outras opcoes*/
+        /*text-decoration: line-through; quando quer deixar riscado o link */
+}
+
+a:hover {
+    text-decoration: underline; 
+        /*quando voce quer q o efeito de sublinhado so apareça quando colocado o mouse em cima*/
+        /*EVENTO HOVER serve para mudar o estado do objeto com o mouse em cima*/
+}
+
+.chilanka-regular {
+    font-family: "Chilanka", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }

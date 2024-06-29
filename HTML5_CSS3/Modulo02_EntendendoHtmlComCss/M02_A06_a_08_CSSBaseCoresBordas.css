@@ -1,0 +1,93 @@
+                                            /*Aula #6 Base Geral do CSS*/
+
+
+/*Podemos fazer a estilização de 3 formas, utilizando as Tags, ID ou CLASS*/
+
+h1 {
+    color: red; /*Sempre que colocar com uma tag, vai pegar a mesma configuracao para todos os H1 da pagina*/
+}
+
+#titulo {
+    color: green; /*Sempre que usar um ID no HTML busco no CSS com o # OBRIGATORIAMENTE* 
+                    ID apenas em uma TAG ou lugar especifico*/
+}
+
+.texto {
+    color: blue; /*Sempre que usar uma CLASS no HTML busco no CSS com o .(ponto) OBRIGATORIAMENTE
+                    CLASS posso utilizar para varias linhas e ou partes do meu HTML com o mesmo nome*/
+}
+
+/*jeito mais padrao de fazer os stylos é colocar separadamente os itens conforme acima #titulo e depois .texto separadamente
+porem se quisermos que os dois atributos tenham as mesmas configurações de tamanho podemos fazer isso de uma forma unificada*/
+
+#titulo, 
+.texto {
+    font-size: 20px; /*alterar tamanho de fonte*/
+    font-weight: bold; /*bold para deixar em negrito*/
+}
+
+ol li {
+    color: blueviolet; /*quando colocado 2 tags como no exemplo da lista sem a virgula ele vai procurar todos as linhas de 
+                         LI dentro de uma OL para ai sim aplicar os estilos especificos*/
+}
+
+ul, li {
+    color: brown; /*quando colocado 2 tags como no exemplo da lista com a virgula ele vai procurar todos as linhas de 
+                         LI dentro de uma UL para ai sim aplicar os estilos especificos*/
+}
+
+
+                                                /*Aula #7 Cores no CSS*/
+
+/* Vamos aprender as 3 formas de definir cores em um HTML*/
+
+#cor1   {
+    background-color: aqua; /*usado para definir fundo da linha inteira*/
+        /*Primeira forma, cores inteiras fechadas por nomes*/
+}
+
+#cor2 {
+    background-color: rgb(59, 133, 11);
+    color: white; /*define a cor da letra da linha*/
+        /*Segunda forma, cores baseadas em RGB, na matriz de cores*/
+}
+
+#cor3 {
+    background-color: #FF0000;
+        /*Terceira forma, cores baseadas em exadecimal*/
+        /*2 primeiros caracteres referente ao R*/
+        /*3 e 4 caracteres referente ao G*/
+        /*2 ultimos caracteres referente ao B*/
+        /*0% = A ou 0 || 100% = F ou 9*/ 
+}
+
+
+                                                /*Aula #8 Bordas no CSS*/
+
+/*DOUBLE | GROOVE | SOLID | DOTTED | DASHED entre outras formas de bordas*/ 
+#cor1   {
+    border-bottom: 5px solid black;
+        /*temos opcoes de colocar borda so em um lado tambem. "bottom abaixo" "top acima " "left esquerda" "right direita"*/ 
+        /*BORDER para colocar borda nas linhas ou selecoes.*/
+        /*primeiro parametro largura da bora em px, o formato da borda SOLID e a cor*/
+}
+
+#cor2 {
+    border: 5px dotted black;
+    border-radius: 10px; 
+        /*BORDER-RADIUS arredondar as bordas da linha */
+        /*DOTTED borda pontilhada*/
+}
+
+#cor3 {
+    border: 5px dashed black;
+        /*DASHED borda com traços*/
+}
+
+div {
+    background-color: green;
+    width: 200px; /*LARGURA*/
+    height: 200px; /*ALTURA*/
+    border-radius: 50%; 
+    border: 2px solid black;
+}

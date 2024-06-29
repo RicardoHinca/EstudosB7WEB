@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    height: 2.5rem;
+    background-color: aquamarine;
+    margin-bottom: 2rem;
+    
+}
+
+footer {
+    background-color: #CCC;
+    height: 4rem;
+    border: 0.1rem solid #C1C1C1;
+}

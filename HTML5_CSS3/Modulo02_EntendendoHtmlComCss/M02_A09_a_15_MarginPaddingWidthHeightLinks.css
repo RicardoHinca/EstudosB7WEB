@@ -1,0 +1,74 @@
+                                    /* Aula 9 - Margins e Padding no CSS */
+
+.body {
+    margin: 0; 
+        /*Todas as paginas vem por padrao com uma MARGEM automatica de 8px, boas praticas zerar elas no inicio dos projetos*/
+}
+.exemplo {
+    border: 2px solid green;
+    padding: 20px; 
+        /*PADDING omando para espaçamento interno dentro do campo */
+    margin: 30px; 
+        /*MARGIN comando para margem externa entre o objeto e a pagina completa */
+    padding-left: 100px;
+        /*Posso colocar uma margem interna em qualquer dos lados usando o comando padding-left, rigth, top ou bottom*/
+    padding: 10px 10px 10px 10px;
+        /*Tambem tem a opção de preencher com as medidas em sequenciais tudo na mesma linha "cima direita baixo esquerda"*/
+        /*As duas ultimas opções do padding tambem serve para o margin*/
+}
+
+                                    /* Aula 10 - Width/height (Altura/Largura) no CSS */
+
+.exemplo1 {
+    background-color: black;
+    width: 100%; /*Altura*/
+    height: 50px; /*Largura*/
+}
+
+img {
+    width: inherit;
+        /*INHERIT ele pega os mesmos tamanhos de largura e altura do objeto anterior pega as medidas por herança*/
+    max-width: 250px; 
+        /*MAX-WIDTH posso limitar um maximo de altura ou largura para a imagem indiferente dos demais estilos*/
+    min-width: 250px; 
+        /*MIN-WIDTH posso limitar um minimo de altura ou largura para a imagem indiferente dos demais estilos*/
+}
+
+
+
+                                    /* Aula 11 - Dicas sobre Width/Height (Altura/Largura) no CSS */
+
+.exemplo2 {
+    background-color: darkcyan;
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 20px;
+    /*O tamanho do exemplo acima, nao seria 400px porque temos padding e bordas entao o tamanho total do objeto seria 430px */
+    /*pois se soma todos os campos da area do objeto ate a sua margin externa*/
+}
+
+* {
+    /*sempre que colocar um * como atributo no CSS ele vai pegar essas configuracoes para toda a sua pagina do CSS*/
+    box-sizing: content-box;
+    /*content box corrigi o tamanho do conteudo conforme as configuracoes dos atributos manteria os 430px */
+    box-sizing: border-box;
+    /*border box corrigi o tamanho do conteudo incluindo a borda e o padding aqui iria para 400px total e o conteudo 370px*/
+}
+
+.link {
+    color: green;
+    font-size: 30px;
+}
+
+.link:hover{
+    /*LINK:HOVER usado quando o mouse e passado por cima do icone, link etc.... */
+    color: red;
+    background-color: aqua;
+}
+
+.link:visited {
+    /*quando o link ja foi clicado muda para oq eu quero...*/
+    color: black;
+}

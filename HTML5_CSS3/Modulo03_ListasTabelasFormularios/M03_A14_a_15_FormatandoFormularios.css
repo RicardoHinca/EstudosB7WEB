@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+label {
+    display: block;
+    /*Esses parametros servem para pular linhas entre um atributos/tags automaticamente sem precisar ficar colocando BR*/
+    margin-bottom: 20px;
+}
+
+input[type="text"], textarea, select {
+    /*TYPE TEXT sempre pode ser usado quando no html esta como text um imput em alguns formatos isso nao funciona*/
+    /*lembrando que se fizemos um atributo pro css como INPUT ele vai pegar para todos do meu html*/
+    /*OBSERVACAO sem espaço entre o input[] tem q ser junto se nao, nao aplica*/
+    padding: 10px;
+    width: 500px;
+    font-size: 20px;
+    border: 1px solid #aaa;
+    outline: 0;
+    /*a borda padrao de quando clica no campo se chama OUTLINE para tirar essa selecao so criar ela com zero*/
+    margin-top: 5px;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+    /*o campo TEXTAREA permite que o usuario no site aumento e diminua o campo de descricao nesse caso. se quisermos deixar esse 
+    campo travado bloqueado para nao fazerem essas alteracoes usar RESIZE NONE */
+}
+
+.termoslink {
+    color: #000;
+    text-decoration: none;
+}
+
+.termoslink:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #CCC;
+    background-color: #EEE;
+}
+
+button:hover {
+    background-color: #BBB;
+}

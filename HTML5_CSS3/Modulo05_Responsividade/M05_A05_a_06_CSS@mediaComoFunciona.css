@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: palegreen;
+}
+
+table, td {
+    border: 2px solid black;
+}
+h1 {
+    font-size: 40px;
+}
+
+@media (min-width:900px) {
+    body {
+        background-color: burlywood;
+    }
+}
+
+@media (min-width:700px) and (max-width: 899px) {
+    body {
+        background-color: grey;
+    }
+}
+
+@media (max-width: 600px) {
+    /*@MEDIA quando eu crio ele, e coloco as condicoes, tudo que esta dentro dos colchetes vai se tornar verdadeiros quando 
+    as condicoes do media forem verdadeiras, quando falsa fica o css padrao da pagina*/
+    body {
+        background-color: blueviolet;
+    }
+    h1 {
+        font-size: 15px;
+    }
+}
+
+@media only print {
+    /*ONLY PRINT o only dentro do @media serve para fazer alguma outra funcao especifica, nesse exemplo utilizamos para 
+    imprimir sempre que ele for imprimir ele ira pegar uma outra fonte especifica ou tudo os parametros que colocarmos
+    dentro deste media only print, da mesma forma que isso serve para outras funcoes */
+    /*SCREEN aparece apenas na impressao, mas nao aparece na tela. */
+    /*ALL ele vai aplicar para todos as condicoes*/
+    h1 {
+        font-size: 20px;
+    }
+    table, td {
+        border: none;
+    }
+}
+

@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+table {
+    width: 600px;
+    border: 1px solid blue;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+table thead {
+    background-color: rgba(146, 146, 146, 0.534);
+}
+
+table tbody {
+    background-color: rgba(209, 209, 209, 0.733);
+}
+
+td:hover {
+    background-color: rgba(40, 20, 155, 0.63);
+}
+
+tbody tr:nth-child(even) {
+    background-color: aqua;
+    /*este comando faz com que as linhas pares fiquem com a cor aqua, e as impares com a cor padrao
+    parecido com o formatar do excel para tabelas especificas*/
+}

@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (aspect-ratio: 1/1) {
+    /*ASPECT-RATIO vai mostrar quando ele esta em um quadrado perfeito porcausa da proporcao 1/1 */
+    body {
+        background-color: red;
+    }
+}
+
+@media (min-aspect-ratio: 2/1) {
+    /*ASPECT-RATIO vai mostrar quando ele esta com a altura 2vezes a largura */
+    body {
+        background-color: blue;
+    }
+}
+
+@media (max-aspect-ratio: 1/2) {
+    /*ASPECT-RATIO vai mostrar quando ele esta com a largura 2 vezes a altura */
+    body {
+        background-color: green;
+    }
+}

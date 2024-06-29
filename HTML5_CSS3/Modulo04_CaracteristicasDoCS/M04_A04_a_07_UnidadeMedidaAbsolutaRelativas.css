@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: #999;
+}
+
+/* AULA #4 MEDIDAS ABSOLUTAS*/
+
+/*UNIDADE ABSOLUTA PX sempre vai ser a quantidade de pixel colocado, nao sofre interferencia externas*/
+/*UNIDADE ABSOLUTA PT sao points ele é um pouco maior que o pixel, ele e mais usado para FONTES */
+/*UNIDADE ABSOLUTA IN sao polegadas ele é um pouco menor que o pixel */
+/*UNIDADE ABSOLUTA CM sao centimetros muito pouco usadas, as vezes utilizado em algo que vai para impressoes */
+/*UNIDADE ABSOLUTA MM sao milimitros muito pouco usadas, as vezes utilizado em algo que vai para impressoes */
+
+/* AULA #5 MEDIDAS RELATIVAS*/
+
+body {
+    font-size: 20px;
+}
+h1 {
+    font-size: 3rem;
+}
+.box {
+    font-size: 2em;
+}
+.box-interno {
+    width: 10em;
+    height: 10em;
+    background-color: #999;
+}
+
+/*EM ela e baseada na fonte-size do elemento pai o principal selecionado nesse exemplo o EM do box-interno se baseia no box pai
+o box tem um fontsize de 20px entao 1 EM = 20px  |||| 2 EM = 40px e assim por diante*/
+/*o problema do EM é que ele sempre vai pegar do item anterior... se tiver uma cascata com 3 ou 4 graus de identacao, 
+o 4 grau vai pegar o EM do 3 grau e nao do primeiro colocado*/
+/*Outro exemplo citado acima. body com fonte de 20px | h1 com fonte de 2EM = 40px | box 2EM=40px | boxinterno 10em de 2EM = 400px*/
+
+/*REM ele e baseado no primeiro item selecionado nesse exemplo aqui o primeiro item que e o HTMLda pra */
+
+.box1 {
+    background-color: #999;
+    width: 50%;
+    height: 400px;
+}
+.box-interno1 {
+    background-color: #333;
+    width: 14ch;
+    height: 50%;
+}
+
+/*quando utilizado a % "porcentagem" ele vai pegando relativo ao espaço da tela disponivel*/
+/*existe tambem a EX baseada no tipo de fonte que voce esta usando, ela se baseia na LETRA X do alfabeto da fonte que voce esta utilizando ela em minusculo*/
+/*existe tambem a CH ele pega o espaço de cada letra para adicionar no campo selecionado apenas para letras monoespace*/
+
+/*VIEWPORT e os espaço visivel para o usuario, aparte da pagina total do html */
+
+.box {
+    background-color: aqua;
+    height: 100vh;
+}
+
+/*INHERIT Para herdar a propriedade de um atributo anterior especifico */
+
+.box2 {
+    font-size: 15px;
+}
+h2 {
+    font-size: 50px;
+}
+.box2 h2 {
+    font-size: inherit;
+    background-color: #c51111;
+}

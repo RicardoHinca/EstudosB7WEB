@@ -1,0 +1,21 @@
+<!DOCTYPE html> <!---->
+<html>
+<head>
+    <meta charset="UTF-8" /> <!--Mod1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 05</title> <!---->
+    <link rel="stylesheet" href="M05_A01_MobileFirst.css" /><!--MUDAR NOME DO CSS-->
+</head>
+<body>
+<p><h3>Aula #3 Imagens Responsivas: Picture e Source</h3></p>
+    <picture>
+            <!--para colocar uma imagem no html se usa o parametro picture, e dentro dele o img e procurar indicar o caminho para a mesma-->
+        <source media="(min-width: 650px)" srcset="img2.png" />
+            <!--quando uso o SOURCE coloco em qual tamanho de tela que eu quero que a imagem apareça por exemplo um banner-->
+            <!--neste exemplo aparece uma imagem com 650px outra com 450px e outra abaixo disso que é a de baixo. -->
+        <source media="(min-width: 450px)" srcset="img3.png" />
+        <img src="img1.png"/>
+    </picture>
+
+</body>
+</html>

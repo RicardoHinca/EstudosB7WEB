@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!---->
+<html>
+<head>
+    <meta charset="UTF-8" /> <!--Mod1-->
+    <title>M03_A16</title> <!--Modulo 03 - Listas Tabelas e Formularios-->
+    <link rel="stylesheet" href="M03_A16_a_18_TagsFieldsetELegendValidacaoNativas.css" />
+</head>
+<body>
+<p><h3>Aula #19 #20 Input Type Hidden File </h3></p>
+
+    <form method="POST" action="blablabla.php" enctype="multipart/form-data">
+        <!--sempre que tiver um ARQUIVO NO SEU FORMULARIO tem que colocar OBRIGATORIAMENTE enctype
+        ai tem varias formas o mais utilizado e o multipart/form-data -->
+
+        <input type="hidden" name="country" value="BR" />
+            <!--TYPE HIDDEN quando vc quer mandar alguma informacao mas que nao apareça na tela para o usuario por exemplo 
+            localizacao, ID, chave primaria etc-->
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label>
+                    Primeiro Nome: <br/>
+                    <input type="text" name="name" required maxlength="5" /> <br/>
+            </label>
+
+            <label>
+                Sobrenome: <br/>
+                <input type="text" name="lastname" minlength="2"/><br/>    
+            </label>
+
+            <label>
+                Foto: <br/>
+                <input type="file" name="photo" accept="image/*"><br/>    
+                    <!--TYPE FILE para colocar arquivos-->
+                    <!--accept coloca o tipo de arquivo que voce quer selecionar no arquivo como imagem/* ou application/pdf etc-->
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da Empresa: <br/>
+                <input type="text" name="companyname" /><br/>
+            </label>
+
+            <label>
+                Cargo da Empresa: <br/>
+                <input type="text" name="companyjobtitle" /><br/>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Cadastrar" />
+    </form>
+
+
+
+</body>
+</html>

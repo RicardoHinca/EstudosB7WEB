@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!---->
+<html>
+<head>
+    <meta charset="UTF-8" /> <!--Mod1-->
+    <title>M03_A16</title> <!--Modulo 03 - Listas Tabelas e Formularios-->
+    <link rel="stylesheet" href="M03_A16_a_18_TagsFieldsetELegendValidacaoNativas.css" />
+</head>
+<body>
+<p><h3>Aula #16 Tags Fieldset e Legend </h3></p>
+
+    <form method="POST" action="blablabla.php">
+        <!--ACTION  e para qual pagina vai enviar o formulario quando eu clicar no botao cadastrar la do final do meu form-->
+
+        <fieldset>
+                <!--FIELDSET é um cojuntos de campos, coloco alguns campos e ele separada por um marcador um quadrado indicando
+                que pertecem ao mesmo agrupamento-->
+            <legend>Dados Pessoais</legend>
+                <!--LEGEND ele cria uma nomenclatura dentro do quadrado criado pelo fieldset fazendo a separação para cadastros-->
+            <label>
+                    Primeiro Nome: <br/>
+                    <input type="text" name="name" required maxlength="5" /> <br/>
+                        <!--REQUIRED informa que esse campo é obrigatorio se nao, nao vai o formulario!-->
+                        <!--REQUIRED MINLENGTH informa que esse campo é obrigatorio e minimo de 5 caracter-->
+                        <!--REQUIRED MAXLENGTH informa que esse campo é obrigatorio o maximo de 5 caracter -->
+            </label>
+
+            <label>
+                Sobrenome: <br/>
+                <input type="text" name="lastname" minlength="2"/><br/>
+                    <!--MINLENGTH se estiver apenas ele sem o required, se esta vazio ele envia se comecou a digitar ele 
+                    pega a regra informada o mesmo vale para o MAXLENGTH -->
+                    
+            </label>
+
+            <label>
+                Email: <br/>
+                <input type="text" name="email" required pattern="[a-zA-Z0-9_.]+@[a-zA-Z0-9_.]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$"
+                title="Endereço de Email Invalido"/><br/>
+                    <!--PATTERN (^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$) padrao para email
+                    informa que tem que ter uma letra de a -z minusucla ou A -Z maiscula de 0 - 9 e ou caracter especial
+                    apos isso o @ e o mesmo padrao apos isso um PONTO e  mais um padrao-->
+                    
+            </label>
+
+            <label>
+                Idade: <br/>
+                <input type="number" name="age" step="2"/><br/>
+                    <!--STEP para numerais ele vai passar sempre de 2 em 2 numeros... ou pelo qual voce selecionou no momento-->
+                <input type="number" name="age" max="30" min="18" /><br/>
+                    <!--MIN / MAX limita qual a numeracao que pode ser colocado dentro do campo -->
+            </label>
+            
+            <label>
+                Data de Nascimento: <br/>
+                <input type="date" name="date" min="1989-01-18"/><br/>
+                    <!--min ou max para data tambem, com mes dia e ano padrao americano. exemplo para data de nascimento
+                    a partir de hoje! bloqueia a data para isso-->
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da Empresa: <br/>
+                <input type="text" name="companyname" /><br/>
+            </label>
+
+            <label>
+                Cargo da Empresa: <br/>
+                <input type="text" name="companyjobtitle" /><br/>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Cadastrar" />
+    </form>
+
+<p><h3>Aula #17 #18 Validação Nativas </h3></p>
+<!-- serve para validar campos, por exemplo tenho um campo idade, verificar se é numero, ou se foi letras que é incorreto. 
+exemplo de nome ele precisa estar preenchido e nao em branco, e precisa ter pelo menos X quantidade de letras se nao 
+ele nao finaliza e continua pedindo para preencher. Existe essas validacoes por JAVASCRIPT e as NATIVAS feitas pelo proprio 
+navegador, que é o que iremos ver nessa aula -->
+
+</body>
+</html>

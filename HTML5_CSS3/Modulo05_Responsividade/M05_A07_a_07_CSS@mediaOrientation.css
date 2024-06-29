@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+@media (orientation: landscape) {
+    /*ORIENTATION ele vai mexer na orientacao dos seus objetos, conforme o tamanho de pixel da tela, ele se baseia
+    no espaço disponivel no aparelho no qual esta sendo utilizado */
+    /*ORIENTATION LANDSCAPE predominante horizontal. */
+    body{
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait){
+    /*PORTRAIT esta majotariamente na vertical*/
+    body {
+        flex-direction: column;
+    }
+}

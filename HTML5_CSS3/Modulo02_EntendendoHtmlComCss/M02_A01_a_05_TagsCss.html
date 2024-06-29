@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!---->
+<html>
+<head>
+    <meta charset="UTF-8" /> <!--Mod1-->
+    <title>Modulo 02</title> <!--Modulo 02 - Identação / Tags / CSS -->
+    <style>
+        h1 { color: blue;}
+        p { color: brown;}
+    </style>
+        <!--colocar tudo as estilizações dentro do head, vai pegar para todos as tags da pagina o mesmo estilo-->
+</head>
+<body>
+<p><h3>Aula #2 Tags</h3></p>
+
+    <h1>Titulo da Pagina</h1>
+        <!--Tag H Tamanhos de textos-->
+
+    Paragrafos separador tag p       | 
+    ....sem as tags Ele nao pula as linhas para organização.....
+    <p>Separador de Paragrafos </p>
+    <p>Ele pula as linhas para organização </p>
+
+    <a href="http://www.google.com.br">Google</a>
+        <!--A tag de ancoragem para link ou outros atributos-->
+        <!--HREF atributos de redirecionamento para links, acessos externos-->
+
+<p><h3>Aula #3 Tags</h3></p>
+
+    <img src="http://www.google.com.br/google.jpg" alt="Logo do Google" width="250px" height="70px" />
+        <!--IMG tag para atributos de imagens-->
+        <!--SRC atributos buscar imagem escolher o caminho-->
+        <!--ALT atributos de descrição da imagem -->
+        <!--WIDTH/HEIGHT atributos de LARGURA e ALTURA-->
+    
+    <button>Clique Aqui</button>
+        <!--BUTTON tag para criação de botoes -->
+
+    <br/> <br/> 
+        <!--BR tag para pular linha separação -->
+
+        <h4>Lista de Bolo:</h4>
+    <ul>
+        <li>Trigo</li>
+        <li>Ovo</li>
+        <li>Agua</li>
+        <li>Leite</li>
+        <li>FMargarina</li>
+        <!--li dentro da tag de UL cada linha dentro de uma li para formar a lista  -->
+    </ul>
+        <!--UL tag de lista desordenada coloca os pontos de topicos -->
+        
+        <ol>
+            <li>Trigo</li>
+            <li>Ovo</li>
+            <li>Agua</li>
+            <li>Leite</li>
+            <li>FMargarina</li>
+        </ol>
+        <!--OL tag de lista ordenada coloca os numeros de topicos -->
+
+<p><h3>Aula #4 CSS</h3></p>
+        <!--3 Formas de incerção de CSS nos HTML ==> CSS Inline / CSS Interno / CSS Externo-->
+
+        <!--MODELOS DE CSS INLINE ABAIXO-->
+    <h1 style="color: red;">Titulo da Pagina</h1>
+        <!--STYLE em frente a tag de texto para colocar a cor desejada no texto-->
+    
+    <img src="http://www.google.com.br/google.jpg" alt="Logo do Google" style="width: 100px;" /><BR/><BR/>
+        <!--STYLE em frente a tag de texto para colocar o tamanho da imagem desejada no texto-->
+    
+    <a href="http://www.google.com" style="font-size: 50px; color: coral;" >Google</a><BR/><BR/>
+        <!--STYLE em frente a tag de texto para colocar o tamanho da fonte desejada no texto-->
+        <!--STYLE colocando ; (ponto e virgula) pode adicionar mais de um filtro ex: tamanho+cor-->
+
+<p><h3>Aula #5 CSS</h3></p>
+         <!--CSS Interno, se coloca dentro do HEAD do HTML, olhar topo da pagina para + informacoes-->
+         <!--CSS Externo, se coloca em outro arquivo, com a extensao CSS, olhar arquivo chamado stylo.css-->
+         <link rel="stylesheet" href="stylo_mod02.css"/>
+         <!--*IMPORTANTE* esta linha é colocada OBRIGATORIAMENTE dentro do HEAD do HTML-->
+         <!--LINK tag para o atributo REL para relacionar a pagina de css ao meu arquivo HTML-->
+         <!--HREF atributos de redirecionamento para links, acessos externos-->
+
+</body>
+</html>

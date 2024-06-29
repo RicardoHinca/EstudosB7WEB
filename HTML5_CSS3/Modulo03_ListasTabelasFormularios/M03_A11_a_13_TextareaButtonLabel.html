@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!---->
+<html>
+<head>
+    <meta charset="UTF-8" /> <!--Mod1-->
+    <title>M03_A11_12_13</title> <!--Modulo 03 - Listas Tabelas e Formularios-->
+    <link rel="stylesheet" href="M03_A11_a_13_TextareaButtonLabel.css" />
+</head>
+<body>
+<p><h3>Aula #11 #12 #13 Textarea - Button - Label </h3></p>
+
+<p><h3>Area de Cadastro </h3></p>
+
+<form action="paginas/loguin.html" method="get">
+
+    <textarea name="Descrição"></textarea><br/>
+        <!--TEXTAREA um parametro que voce pode escrever varias coisas e ou linhas dentro do mesmo campo-->
+    
+    <label>Nome Completo</label><br/><br/>
+        <!--serve basicamente para colocar um nome texto no formulario de uma forma "correta"-->
+    <button>Texto Proprio Botao</button><br/><br/>
+        <!--um botao! serve tambem para dentro de um formulario igual o Input-->
+        <!--a diferença e apenas q o input e apenas para formulario e o button para algo mais avançado-->
+
+    <input type="submit"/><br/><br/>
+    
+    <input type="checkbox" id="aceite" />
+    <label for="aceite">Eu declaro que li e aceito os termos de uso.</label><br/><br/>
+        <!--dentro do LABEL podemor usar um FOR que vai ser direcionado para o ID de algum outro atributo fazendo com que eu possa clicar
+        tanto dentro do checkbox como em qualquer parte da frase referente ao label, nao ficando preso apenas a um icone-->
+
+        
+    <label> 
+        <input type="checkbox"/>Eu declaro que li e aceito os termos de uso.
+    </label>
+        <!--posso utilizar de outra forma tambem, que e os input dentro do label para boas praticas de prog!-->
+</form>
+
+<p><h3>Area de Loguin </h3></p>
+<form>
+
+</form>
+
+</body>
+</html>

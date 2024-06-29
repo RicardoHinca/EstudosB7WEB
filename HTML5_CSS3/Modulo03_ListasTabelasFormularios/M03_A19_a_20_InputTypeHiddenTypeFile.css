@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 50px;
+    font-size: 15px;
+}
+
+fieldset {
+    background-color: #EEE;
+    margin-bottom: 20px;
+    border: 2px solid salmon;
+}
+
+legend {
+    background-color: salmon;
+    color: white;
+    padding: 5px;
+}
