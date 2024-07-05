@@ -1,0 +1,53 @@
+@keyframes animacoes {
+    0% {background-color: red; top:0px;left:0px;}
+    25% {background-color: yellow; top:0px;left:200px;}
+    50% {background-color: blue; top:200px;left:200px;}
+    75% {background-color: green; top:200px;left:0px;}
+    100% {background-color: aqua; top:0px;left:0px;}
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+}
+
+.exemplo {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    animation-name: animacoes;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+}
+
+.exemplo {
+    box-shadow: 10px 10px 8px #d30909;
+    /* box-shadow e o comando para sombreamento. voce colocando os dois primeiros valores sao para as linhas laterais direita e em baixo, se colocar o valor negativo vai para o lado esquerdo e superior. 
+    o terceiro parametro seria para fazer um esfumacado, espalhado, o ultimo parametro e a cor dessa sombra */
+}
+
+header {
+    text-shadow: 5px 5px 5px #d30009;
+    /* fazer sombra em textos, usar o comando text-shadow os demais parametros iguais do box*/
+}
+
+
+.boxexemplo {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    background-color: aqua;
+    transition: all 0.5s linear;
+    /* transition - arrumar transicao de projeto mais suave, tipo diminuir ou aumentar o objeto texto etc */
+    /* para finalizar essa transicao e necessario colocar um :hover com o tamanho novo ao colocar o mouse em cima */
+}
+
+.boxexemplo:hover {
+    width: 300px;
+
+}
