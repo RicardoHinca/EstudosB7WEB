@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+.container { 
+    background-color: #DDDDDD;
+    display: flex;
+    /* display flex e o famoso flexbox, onde ele deixa os itens alinhados um ao lado do outro de frente pra tras de tras pra frente, em linhas ou colunas varias formas possiveis */
+    flex-direction: row-reverse;
+    /* flex-direction row reverse ele deixa as minhas linhas do final da pagina para o inicio, ja apenas o row deixa as linhas do inicio da pagina para o final */
+}
+
+.container div{
+    background-color: #FF0000;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.container1 { 
+    background-color: #DDDDDD;
+    display: flex;
+    flex-direction: row-reverse;
+ 
+}
+
+.container1 div{
+    flex: 1;
+    /* esse flex 1 ele divide em partes iguais os meus "quadrados"de dentro da div, ele sempre vai fazer a divisao proposrcionalmente CONTINUA NA DIV3*/
+    background-color: #FF0000;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.container2 { 
+    background-color: #DDDDDD;
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+.div1{
+    flex: 1;
+    background-color: #FF0000;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.div2{
+    flex: 1;
+    background-color: #FF0000;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.div3{
+    flex: 2;
+    /*...agora se eu uso o flex 2 dentro da mesma div, ele vai pegar os itens do flex1 e dividir em tamanhos iguais, porem os meus itens da flex2 vai usar 50% do tamanho total da flex1 e assim por diante  */
+    background-color: #FF0000;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.div4{
+    flex: 3;
+    background-color: #FF0000;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* --------------------------- **** AULA 02 ALINHAMENTOS **** --------------------------------------- */
+
+
+.container10 { 
+    background-color: #DDDDDD;
+    display: flex;
+    height: 300px;
+    flex-direction: row;
+    justify-content: center;
+    /* ele alinha conforme a direcao se é linha vai centralizar no meio da tela, se for em coluna no meio da altura  */
+    /* tambem posso uar o justify-content com o flex-end ele vai alinhar do final da pagina para o inicio, mas na ordem correta de 1,2,3, e nao de 3,2,1, igual o reverse faz.  */
+    align-items: center;
+    /* ja o align intens faz o alinhamento do outro sentido que o justifi fez,  */
+}
+
+.container10 div{
+    background-color: #FF0000;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    height: 100px;
+    width: 100px;
+}
